@@ -14,7 +14,7 @@ export const ImagePanel: React.FC = () => {
             
             {/* The Image - Flipped horizontally (scale-x-[-1]) */}
             <img 
-                src="./src/img/image.png" 
+                src="https://i.imgur.com/isgU6Hn.png" 
                 alt="Workspace with person coding" 
                 className="w-full h-full object-cover filter grayscale contrast-[1.15] brightness-[0.8] "
             />
