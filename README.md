@@ -3,7 +3,9 @@
 **Front-End Engineer & Web Designer**  
 Crafting digital experiences with code, clarity, and a touch of brutalism.  
 [→ View Live Portfolio](https://matheusmaxs.vercel.app) <!-- substitua pelo seu link real -->
-
+ 
+Hero - Preview
+[![Portfolio Preview](https://i.imgur.com/UelGbhs.png)](https://matheus.dev)
 ---
 
 ## - Concept
