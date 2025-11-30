@@ -407,24 +407,27 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
           <div className="border border-[#222] bg-[#0a0a0a] group hover:border-[#333] transition-colors flex flex-col">
               <div className="h-48 bg-[#111] relative overflow-hidden border-b border-[#222]">
                   {/* Pattern or Placeholder */}
-                   <div className="absolute inset-0 bg-noise opacity-20"></div>
+                   <div 
+                    className="absolute inset-0 bg-cover bg-center opacity-100"
+                    style={{ backgroundImage: "url('https://i.imgur.com/wAwK6Yy.png')" }}
+                   ></div>
                    <div className="absolute bottom-4 left-4">
                        <Monitor size={24} className="text-[#444]" />
                    </div>
               </div>
               <div className="p-6 md:p-8 flex flex-col flex-1">
                   <div className="flex justify-between items-start mb-4">
-                      <h3 className="text-2xl font-bold text-white">Fintech Dashboard</h3>
+                      <h3 className="text-2xl font-bold text-white">Excludia Website Redesign</h3>
                       <div className="flex gap-2">
-                           <a href="#" className="text-[#666] hover:text-white"><Github size={18} /></a>
-                           <a href="#" className="text-[#666] hover:text-white"><ArrowUpRight size={18} /></a>
+                           <a href="https://github.com/MatheusMaxs/Excludia" className="text-[#666] hover:text-white"><Github size={18} /></a>
+                           <a href="https://excludia.vercel.app" className="text-[#666] hover:text-white"><ArrowUpRight size={18} /></a>
                       </div>
                   </div>
                   <p className="text-[#888] text-sm leading-relaxed mb-6">
-                      A high-performance analytics dashboard for financial data visualization. Features real-time updates via WebSockets and customizable widget layouts.
+                     Modern redesign for a digital agency website with a clean, neo-brutalist aesthetic. Built with Next.js and Tailwind CSS, it delivers fast performance, responsive design, and seamless user experience.
                   </p>
                   <div className="mt-auto flex flex-wrap gap-2">
-                      {['React', 'TypeScript', 'D3.js', 'Socket.io'].map(t => (
+                      {['React', 'TypeScript'].map(t => (
                           <span key={t} className="text-[10px] font-mono text-[#555] border border-[#222] px-2 py-1">{t}</span>
                       ))}
                   </div>
