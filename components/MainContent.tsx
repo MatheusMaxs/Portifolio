@@ -405,10 +405,10 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full mb-12 flex-1">
           {/* Project 1 */}
           <div className="border border-[#222] bg-[#0a0a0a] group hover:border-[#333] transition-colors flex flex-col">
-              <div className="h-48 bg-[#111] relative overflow-hidden border-b border-[#222]">
+              <div className="h-72 bg-[#111] relative overflow-hidden border-b border-[#222]">
                   {/* Pattern or Placeholder */}
                    <div 
-                    className="absolute inset-0 bg-cover bg-center opacity-100"
+                    className="absolute inset-0 bg-cover bg-center opacity-100 bottom-[-22px]"
                     style={{ backgroundImage: "url('https://i.imgur.com/wAwK6Yy.png')" }}
                    ></div>
                    <div className="absolute bottom-4 left-4">
@@ -436,7 +436,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
 
           {/* Project 2 */}
            <div className="border border-[#222] bg-[#0a0a0a] group hover:border-[#333] transition-colors flex flex-col">
-              <div className="h-48 bg-[#111] relative overflow-hidden border-b border-[#222]">
+              <div className="h-72 bg-[#111] relative overflow-hidden border-b border-[#222]">
                    <div className="absolute inset-0 bg-noise opacity-20"></div>
                    <div className="absolute bottom-4 left-4">
                        <Monitor size={24} className="text-[#444]" />
@@ -469,25 +469,26 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                      {/* Design 1 */}
                      <a href="#" className="border border-[#222] bg-[#0a0a0a] hover:border-[#333] transition-colors group block flex flex-col cursor-pointer">
-                         <div className="h-32 bg-[#111] relative overflow-hidden border-b border-[#222]">
-                             <div className="absolute inset-0 bg-noise opacity-20"></div>
-                             {/* Preview content/placeholder */}
-                             <div className="absolute inset-0 flex items-center justify-center">
-                                 <div className="w-16 h-16 border border-[#333] opacity-30 transform rotate-12 group-hover:rotate-0 transition-transform duration-500"></div>
-                             </div>
+                         <div className="h-56 bg-[#111] relative overflow-hidden border-b border-[#222]"
+                         style={{     backgroundImage: "url('https://i.imgur.com/UEL0WgB.png')",
+                                      backgroundSize: "100% ",
+                                       backgroundPosition: "center",
+                                       backgroundRepeat: "no-repeat",
+                                    }}>
+                                <div className="absolute inset-0 bg-noise opacity-20"></div>
                          </div>
                          <div className="p-6">
                              <div className="flex justify-between mb-4">
                                  <Figma size={20} className="text-[#444] group-hover:text-[#ea4c1d] transition-colors" />
                                  <ArrowUpRight size={16} className="text-[#444] opacity-0 group-hover:opacity-100 transition-opacity" />
                              </div>
-                             <h5 className="text-white font-medium mb-1">Neo-Brutalism Kit</h5>
-                             <p className="text-[#666] text-xs">Figma Design System</p>
+                             <h5 className="text-white font-medium mb-1">Design for a shoe of adidas (onw the game 3.0)</h5>
+                             <p className="text-[#666] text-xs">Figma Design UI/UX & Product Design</p>
                          </div>
                      </a>
                       {/* Design 2 */}
                      <a href="#" className="border border-[#222] bg-[#0a0a0a] hover:border-[#333] transition-colors group block flex flex-col cursor-pointer">
-                         <div className="h-32 bg-[#111] relative overflow-hidden border-b border-[#222]">
+                         <div className="h-56 bg-[#111] relative overflow-hidden border-b border-[#222]">
                              <div className="absolute inset-0 bg-noise opacity-20"></div>
                              <div className="absolute inset-0 flex items-center justify-center">
                                  <div className="w-12 h-20 border border-[#333] rounded-[4px] opacity-30 transform -rotate-6 group-hover:rotate-0 transition-transform duration-500"></div>
@@ -504,7 +505,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                      </a>
                       {/* Design 3 */}
                      <a href="#" className="border border-[#222] bg-[#0a0a0a] hover:border-[#333] transition-colors group block flex flex-col cursor-pointer">
-                         <div className="h-32 bg-[#111] relative overflow-hidden border-b border-[#222]">
+                         <div className="h-56 bg-[#111] relative overflow-hidden border-b border-[#222]">
                              <div className="absolute inset-0 bg-noise opacity-20"></div>
                              <div className="absolute inset-0 flex items-center justify-center">
                                  <div className="w-20 h-12 border border-[#333] opacity-30 group-hover:scale-110 transition-transform duration-500"></div>
