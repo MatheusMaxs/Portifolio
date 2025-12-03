@@ -419,8 +419,8 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                   <div className="flex justify-between items-start mb-4">
                       <h3 className="text-2xl font-bold text-white">Excludia Website Redesign</h3>
                       <div className="flex gap-2">
-                           <a href="https://github.com/MatheusMaxs/Excludia" className="text-[#666] hover:text-white"><Github size={18} /></a>
-                           <a href="https://excludia.vercel.app" className="text-[#666] hover:text-white"><ArrowUpRight size={18} /></a>
+                           <a href="https://github.com/MatheusMaxs/Excludia" target="_blank" className="text-[#666] hover:text-white"><Github size={18} /></a>
+                           <a href="https://excludia.vercel.app" target="_blank" className="text-[#666] hover:text-white"><ArrowUpRight size={18} /></a>
                       </div>
                   </div>
                   <p className="text-[#888] text-sm leading-relaxed mb-6">
@@ -466,34 +466,59 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                     <span className="w-2.5 h-2.5 bg-[#333]"></span>
                     UI / UX Experiments
                 </h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                      {/* Design 1 */}
-                     <div className="border border-[#222] bg-[#0a0a0a] p-6 hover:border-[#333] transition-colors group">
-                         <div className="flex justify-between mb-4">
-                             <Figma size={20} className="text-[#444] group-hover:text-[#ea4c1d] transition-colors" />
-                             <ArrowUpRight size={16} className="text-[#444] opacity-0 group-hover:opacity-100 transition-opacity" />
+                     <a href="#" className="border border-[#222] bg-[#0a0a0a] hover:border-[#333] transition-colors group block flex flex-col cursor-pointer">
+                         <div className="h-32 bg-[#111] relative overflow-hidden border-b border-[#222]">
+                             <div className="absolute inset-0 bg-noise opacity-20"></div>
+                             {/* Preview content/placeholder */}
+                             <div className="absolute inset-0 flex items-center justify-center">
+                                 <div className="w-16 h-16 border border-[#333] opacity-30 transform rotate-12 group-hover:rotate-0 transition-transform duration-500"></div>
+                             </div>
                          </div>
-                         <h5 className="text-white font-medium mb-1">Neo-Brutalism Kit</h5>
-                         <p className="text-[#666] text-xs">Figma Design System</p>
-                     </div>
+                         <div className="p-6">
+                             <div className="flex justify-between mb-4">
+                                 <Figma size={20} className="text-[#444] group-hover:text-[#ea4c1d] transition-colors" />
+                                 <ArrowUpRight size={16} className="text-[#444] opacity-0 group-hover:opacity-100 transition-opacity" />
+                             </div>
+                             <h5 className="text-white font-medium mb-1">Neo-Brutalism Kit</h5>
+                             <p className="text-[#666] text-xs">Figma Design System</p>
+                         </div>
+                     </a>
                       {/* Design 2 */}
-                     <div className="border border-[#222] bg-[#0a0a0a] p-6 hover:border-[#333] transition-colors group">
-                         <div className="flex justify-between mb-4">
-                             <Figma size={20} className="text-[#444] group-hover:text-[#ea4c1d] transition-colors" />
-                             <ArrowUpRight size={16} className="text-[#444] opacity-0 group-hover:opacity-100 transition-opacity" />
+                     <a href="#" className="border border-[#222] bg-[#0a0a0a] hover:border-[#333] transition-colors group block flex flex-col cursor-pointer">
+                         <div className="h-32 bg-[#111] relative overflow-hidden border-b border-[#222]">
+                             <div className="absolute inset-0 bg-noise opacity-20"></div>
+                             <div className="absolute inset-0 flex items-center justify-center">
+                                 <div className="w-12 h-20 border border-[#333] rounded-[4px] opacity-30 transform -rotate-6 group-hover:rotate-0 transition-transform duration-500"></div>
+                             </div>
                          </div>
-                         <h5 className="text-white font-medium mb-1">Mobile Banking</h5>
-                         <p className="text-[#666] text-xs">App Concept</p>
-                     </div>
+                         <div className="p-6">
+                             <div className="flex justify-between mb-4">
+                                 <Figma size={20} className="text-[#444] group-hover:text-[#ea4c1d] transition-colors" />
+                                 <ArrowUpRight size={16} className="text-[#444] opacity-0 group-hover:opacity-100 transition-opacity" />
+                             </div>
+                             <h5 className="text-white font-medium mb-1">Mobile Banking</h5>
+                             <p className="text-[#666] text-xs">App Concept</p>
+                         </div>
+                     </a>
                       {/* Design 3 */}
-                     <div className="border border-[#222] bg-[#0a0a0a] p-6 hover:border-[#333] transition-colors group">
-                         <div className="flex justify-between mb-4">
-                             <Figma size={20} className="text-[#444] group-hover:text-[#ea4c1d] transition-colors" />
-                             <ArrowUpRight size={16} className="text-[#444] opacity-0 group-hover:opacity-100 transition-opacity" />
+                     <a href="#" className="border border-[#222] bg-[#0a0a0a] hover:border-[#333] transition-colors group block flex flex-col cursor-pointer">
+                         <div className="h-32 bg-[#111] relative overflow-hidden border-b border-[#222]">
+                             <div className="absolute inset-0 bg-noise opacity-20"></div>
+                             <div className="absolute inset-0 flex items-center justify-center">
+                                 <div className="w-20 h-12 border border-[#333] opacity-30 group-hover:scale-110 transition-transform duration-500"></div>
+                             </div>
                          </div>
-                         <h5 className="text-white font-medium mb-1">Cyberpunk HUD</h5>
-                         <p className="text-[#666] text-xs">Interface Design</p>
-                     </div>
+                         <div className="p-6">
+                             <div className="flex justify-between mb-4">
+                                 <Figma size={20} className="text-[#444] group-hover:text-[#ea4c1d] transition-colors" />
+                                 <ArrowUpRight size={16} className="text-[#444] opacity-0 group-hover:opacity-100 transition-opacity" />
+                             </div>
+                             <h5 className="text-white font-medium mb-1">Cyberpunk HUD</h5>
+                             <p className="text-[#666] text-xs">Interface Design</p>
+                         </div>
+                     </a>
                 </div>
            </div>
       </div>
