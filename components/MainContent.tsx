@@ -487,7 +487,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                          </div>
                      </a>
                       {/* Design 2 */}
-                      <a href="https://www.figma.com/design/a3lEDW2fgwd2fcBx0mjS07/My-design-for-adidas" target="_blank" className="border border-[#222] bg-[#0a0a0a] hover:border-[#333] transition-colors group block flex flex-col cursor-pointer">
+                      <a href="https://www.figma.com/design/O1ICldZ1x2ONvkuSeRiIH6/My-design-for-nike-x-Febre-90-s" target="_blank" className="border border-[#222] bg-[#0a0a0a] hover:border-[#333] transition-colors group block flex flex-col cursor-pointer">
                          <div className="h-56 bg-[#111] relative overflow-hidden border-b border-[#222]"
                          style={{     backgroundImage: "url('https://i.imgur.com/cM15FQ0.png')",
                                       backgroundSize: "100% ",
