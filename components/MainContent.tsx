@@ -41,7 +41,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
            I believe simplicity is power: every line of code and every pixel should be intentional. My focus is on developing scalable, seamless, and intuitive products—where technology serves human experience, not the other way around.
         </p>
         <p>
-           Currently, I’m exploring the intersection of creative development and system architecture, continuously pushing the boundaries of what’s possible in the browser.
+           Currently, I’m expanding my expertise toward Full Stack Development with Java and Spring, aiming to design and build complete, performant applications that combine elegant front‑end experiences with solid, enterprise‑grade backends.
         </p>
       </div>
     </>
@@ -77,7 +77,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                 With a strong foundation in modern web technologies and a love for minimalist aesthetics, I approach every project with a focus on user experience, performance, and maintainable code. I believe that good design is invisible—it just works.
                 </p>
                 <p>
-                Currently, I am focused on exploring the intersections of creative development and system architecture, pushing the boundaries of what's possible in the browser.
+                Currently, I’m expanding my expertise toward Full Stack Development with Java and Spring, aiming to design and build complete, performant applications that combine elegant front‑end experiences with solid, enterprise‑grade backends.
                 </p>
             </div>
         </div>
@@ -298,18 +298,17 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                   </div>
                   <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-6 uppercase">Current Focus</h3>
                   
-                  <h4 className="text-2xl md:text-3xl font-bold text-white mb-3">Creative Coding</h4>
-                  <p className="text-[#888] text-sm leading-relaxed mb-6 max-w-sm">
-                      Exploring the intersection of math and art through WebGL and shaders. Currently building a physics-based particle engine.
+                  <h4 className="text-2x1 md:text-3xl font-bold text-white mb-3">Full Stack Development</h4>
+                  <p className="text-[#888] text-sm leading-relaxed mb-6 max-w">
+                    Expanding from React + TypeScript into Java with Spring Boot, building RESTful APIs, exploring database integration, and connecting robust backends with modern frontends.
                   </p>
-                  
                   <div className="space-y-2">
                       <div className="flex justify-between text-[10px] font-mono text-[#555] uppercase tracking-wider">
-                          <span>Three.js Journey</span>
-                          <span>72%</span>
+                          <span>Spring Journey</span>
+                          <span>32%</span>
                       </div>
                       <div className="w-full h-1 bg-[#1a1a1a] overflow-hidden">
-                          <div className="h-full bg-[#e5e5e5] w-[72%]"></div>
+                          <div className="h-full bg-[#e5e5e5] w-[32%]"></div>
                       </div>
                   </div>
               </div>
@@ -328,11 +327,11 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                         </div>
                          <div className="flex items-center gap-3">
                             <div className="w-2 h-2 bg-[#333] rounded-full"></div>
-                            <span className="text-[#ccc] text-sm font-medium">CSS-Tricks</span>
+                            <span className="text-[#ccc] text-sm font-medium">Spring Documentation</span>
                         </div>
                          <div className="flex items-center gap-3">
                             <div className="w-2 h-2 bg-[#333] rounded-full"></div>
-                            <span className="text-[#ccc] text-sm font-medium">WebGL Fundamentals</span>
+                            <span className="text-[#ccc] text-sm font-medium">Baeldung</span>
                         </div>
                    </div>
               </div>
@@ -350,24 +349,24 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                    <ul className="space-y-6">
                        <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 group/book">
                            <div>
-                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Refactoring UI</span>
-                               <span className="text-xs text-[#666] font-mono">Adam Wathan & Steve Schoger</span>
+                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Clean Architecture</span>
+                               <span className="text-xs text-[#666] font-mono">Robert C. Martin</span>
                            </div>
                            <span className="inline-block px-2 py-1 border border-[#222] bg-[#111] text-[9px] text-[#555] uppercase tracking-widest text-center min-w-[60px]">Read</span>
                        </li>
                        <li className="w-full h-[1px] bg-[#1a1a1a]"></li>
                        <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 group/book">
                            <div>
-                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Clean Architecture</span>
-                               <span className="text-xs text-[#666] font-mono">Robert C. Martin</span>
+                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Spring in Action</span>
+                               <span className="text-xs text-[#666] font-mono">Craig Walls</span>
                            </div>
                            <span className="inline-block px-2 py-1 border border-[#222] bg-[#111] text-[9px] text-[#e5e5e5] uppercase tracking-widest text-center min-w-[60px] animate-pulse">Reading</span>
                        </li>
                         <li className="w-full h-[1px] bg-[#1a1a1a]"></li>
                         <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 group/book">
                            <div>
-                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Don't Make Me Think</span>
-                               <span className="text-xs text-[#666] font-mono">Steve Krug</span>
+                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Effective Java</span>
+                               <span className="text-xs text-[#666] font-mono">Joshua Bloch</span>
                            </div>
                            <span className="inline-block px-2 py-1 border border-[#222] bg-[#111] text-[9px] text-[#444] uppercase tracking-widest text-center min-w-[60px]">Next</span>
                        </li>
@@ -378,7 +377,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                <div className="border border-[#222] bg-[#0a0a0a] p-6 relative group hover:border-[#333] transition-colors">
                     <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-4 uppercase">Exploration</h3>
                     <div className="flex flex-wrap gap-2">
-                        {['Rust', 'AI Agents', 'UI/UX Psychology', 'Blender', 'Hardware', 'Accessibility'].map(tag => (
+                        {['Spring Security', 'PostgreSQL', 'REST APIs', 'AI Agents', 'UI/UX Psych.', 'Accessibility'].map(tag => (
                             <span key={tag} className="text-xs text-[#666] border border-[#222] px-2 py-1 bg-[#0f0f0f] select-none hover:text-white hover:border-[#444] transition-colors">
                                 {tag}
                             </span>
@@ -444,16 +443,16 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
               </div>
               <div className="p-6 md:p-8 flex flex-col flex-1">
                   <div className="flex justify-between items-start mb-4">
-                      <h3 className="text-2xl font-bold text-white">E-Commerce API</h3>
+                      <h3 className="text-2xl font-bold text-white">TaskFlow API - Building</h3>
                       <div className="flex gap-2">
                            <a href="#" className="text-[#666] hover:text-white"><Github size={18} /></a>
                       </div>
                   </div>
                   <p className="text-[#888] text-sm leading-relaxed mb-6">
-                      Headless e-commerce solution built with Node.js and GraphQL. Handles complex inventory management, auth, and payment processing.
+                      RESTful API built with Java + Spring Boot, focusing on authentication, PostgreSQL integration, and clean architecture while connecting to a React frontend.
                   </p>
                   <div className="mt-auto flex flex-wrap gap-2">
-                      {['Node.js', 'GraphQL', 'PostgreSQL', 'Redis'].map(t => (
+                      {['Java', 'Spring Boot', 'PostgreSQL', 'React'].map(t => (
                           <span key={t} className="text-[10px] font-mono text-[#555] border border-[#222] px-2 py-1">{t}</span>
                       ))}
                   </div>
