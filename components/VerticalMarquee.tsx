@@ -12,7 +12,7 @@ export const VerticalMarquee: React.FC = () => {
                 </span>
                 
                 {/* Center Solid Text */}
-                <span className="relative inline-block py-3 px-4 text-[7vh] leading-none font-display font-black tracking-[0.30em] text-[#e5e5e5] bg-[#070707] select-none z-10">
+                <span className="relative inline-block py-3 px-4 text-[7vh] leading-none font-display font-black tracking-[0.30em] text-[#e5e5e5] bg-[#0a0a0aff] select-none z-10">
                   MATHEUS MAXS
                 </span>
 

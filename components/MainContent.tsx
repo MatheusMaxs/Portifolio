@@ -232,7 +232,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
              <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-8 uppercase">03 // Workflow</h3>
              
              <div className="flex flex-wrap gap-2 content-start mb-8">
-                {['Git', 'GitHub', 'Vite', 'Webpack', 'Figma', 'Jest', 'Docker', 'Linux', 'Postman'].map(tool => (
+                {['Git', 'GitHub', 'Vite', 'Webpack', 'Figma', 'Jest', 'Docker', 'Linux',].map(tool => (
                     <span key={tool} className="border border-[#222] bg-[#0f0f0f] px-3 py-1.5 text-xs text-[#888] hover:text-white hover:border-[#444] transition-colors cursor-default select-none">
                         {tool}
                     </span>
@@ -412,7 +412,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                    ></div>
                    <div className="absolute bottom-4 left-4">
                        <Monitor size={24} className="text-[#444]" />
-                   </div>
+                   </div> 
               </div>
               <div className="p-6 md:p-8 flex flex-col flex-1">
                   <div className="flex justify-between items-start mb-4">
