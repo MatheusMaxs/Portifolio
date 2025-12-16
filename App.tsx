@@ -47,7 +47,7 @@ const App: React.FC = () => {
       <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.12] bg-noise mix-blend-overlay"></div>
 
       {/* Main Container / Border Frame */}
-      <div className="w-full md:max-w-[1400px] h-[92vh] md:h-[85vh] supports-[height:100dvh]:h-[92dvh] min-h-[600px] border-x md:border border-[#222] relative flex flex-col bg-[#0c0c0c] shadow-2xl transition-all duration-300">
+      <div className="w-full md:max-w-[1400px] h-[92vh] md:fh-[85vh] supports-[height:100dvh]:h-[92dvh] min-h-[600px] border-x md:border border-[#222] relative flex flex-col bg-[#0c0c0c] shadow-2xl transition-all duration-300">
         
         {/* Top Bar */}
         <div className="h-12 border-b border-[#222] flex justify-between items-center px-4 md:px-5 shrink-0 bg-[#0c0c0c] z-30 relative">

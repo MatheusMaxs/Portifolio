@@ -655,11 +655,15 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
         <div className="shrink-0 px-5 md:px-12 pb-8 md:pb-10 pt-4 bg-[#0c0c0c] border-t border-[#222] md:border-t-0">
             
             {/* Dynamic Button */}
-            <button className="group block w-full md:max-w-[360px] bg-[#b0b0b0] hover:bg-[#c0c0c0] text-[#0a0a0a] h-[54px] md:h-[64px] mb-4 md:mb-6 transition-colors duration-200 rounded-[2px] relative overflow-hidden">
-            <span className="flex items-center justify-center h-full font-sans text-xl md:text-2xl font-bold tracking-tight relative z-10">
+            <a
+              href="/Curriculo.pdf"
+              download
+              className="group block w-full md:max-w-[360px] bg-[#b0b0b0] hover:bg-[#c0c0c0] text-[#0a0a0a] h-[54px] md:h-[64px] mb-4 md:mb-6 transition-colors duration-200 rounded-[2px] relative overflow-hidden"
+            >
+              <span className="flex items-center justify-center h-full font-sans text-xl md:text-2xl font-bold tracking-tight relative z-10">
                 Download My CV.
-            </span>
-            </button>
+              </span>
+            </a>
 
             <div className="hidden md:block">
             <ScrollIndicator />
