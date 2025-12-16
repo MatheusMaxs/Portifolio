@@ -31,7 +31,7 @@ const App: React.FC = () => {
   );
 
   // Sections that consume the full layout (hiding image panel and marquee)
-  const isFullPage = ['ABOUT', 'SKILLS', 'LEARNING', 'PROJECTS', 'CONTACT'].includes(activeSection);
+  const isFullPage = ['ABOUT', 'RESUME', 'SKILLS', 'LEARNING', 'PROJECTS', 'CONTACT'].includes(activeSection);
 
   const navItems = ['HOME', 'ABOUT', 'SKILLS', 'LEARNING', 'PROJECTS & DESIGNS', 'CONTACT'];
 
@@ -124,7 +124,7 @@ const App: React.FC = () => {
             
             {/* Text Content (Left/Bottom) */}
             <div className={`w-full ${isFullPage ? '' : 'lg:w-1/2'} h-full relative border-r border-[#222] bg-[#0c0c0c] order-2 lg:order-1 flex flex-col overflow-hidden transition-all duration-300`}>
-               <MainContent activeSection={activeSection} />
+               <MainContent activeSection={activeSection} onNavigate={handleNavClick} />
             </div>
 
             {/* Image Content (Right/Top) - Hidden on FullPage sections AND Mobile/Tablet */}

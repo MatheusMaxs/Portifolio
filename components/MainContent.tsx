@@ -1,12 +1,13 @@
 import React from 'react';
 import { ScrollIndicator } from './ScrollIndicator';
-import { ArrowUpRight, Github, Twitter, Linkedin, Terminal, Cpu, Layers, Box, BookOpen, Monitor, Figma, Mail, MapPin, Send } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, Download, Github, Twitter, Linkedin, Terminal, Cpu, Layers, Box, BookOpen, Monitor, Figma, Mail, MapPin, Send } from 'lucide-react';
 
 interface MainContentProps {
   activeSection: string;
+  onNavigate: (section: string) => void;
 }
 
-export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
+export const MainContent: React.FC<MainContentProps> = ({ activeSection, onNavigate }) => {
   const isHome = activeSection === 'HOME';
   
   // -- Content Components --
@@ -633,6 +634,120 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
     </div>
   );
 
+  const ResumeContent = () => (
+    <div className="animate-fade-in w-full min-h-full flex flex-col max-w-4xl mx-auto">
+      <button 
+        onClick={() => onNavigate('HOME')}
+        className="group flex items-center gap-2 text-[#666] hover:text-white transition-colors mb-6 font-mono text-xs tracking-widest uppercase"
+      >
+        <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+        Back to Home
+      </button>
+
+      <div className="border border-[#222] bg-[#0a0a0a] p-8 md:p-12 relative shadow-lg">
+        <div className="border-b border-[#222] pb-8 mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">MATHEUS MAXS</h1>
+            <p className="text-[#888] font-mono text-sm tracking-widest uppercase">Front-End Engineer</p>
+          </div>
+          <div className="flex flex-col items-start md:items-end gap-1 text-xs font-mono text-[#666]">
+            <span>São Paulo, Brazil</span>
+            <a href="mailto:hello@matheus.dev" className="hover:text-white transition-colors">hello@matheus.dev</a>
+            <a href="https://github.com/MatheusMaxs" className="hover:text-white transition-colors">github.com/MatheusMaxs</a>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="md:col-span-1 space-y-8">
+            <section>
+              <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-4 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-[#333]"></span> Education
+              </h3>
+              <div className="text-sm text-[#888]">
+                <div className="mb-1 text-[#e5e5e5] font-medium">B.S. Computer Science</div>
+                <div className="mb-1">USP</div>
+                <div className="text-xs text-[#555]">2019 - 2023</div>
+              </div>
+            </section>
+            <section>
+              <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-4 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-[#333]"></span> Skills
+              </h3>
+              <ul className="text-sm text-[#888] space-y-2 font-mono text-xs">
+                <li>React / Next.js</li>
+                <li>TypeScript</li>
+                <li>Tailwind CSS</li>
+                <li>Node.js</li>
+                <li>WebGL / Three.js</li>
+                <li>Figma</li>
+                <li>Git / CI/CD</li>
+              </ul>
+            </section>
+            <section>
+              <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-4 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-[#333]"></span> Languages
+              </h3>
+              <ul className="text-sm text-[#888] space-y-1">
+                <li>Portuguese (Native)</li>
+                <li>English (Fluent)</li>
+              </ul>
+            </section>
+          </div>
+
+          <div className="md:col-span-3 space-y-10">
+            <section>
+              <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-6 border-b border-[#222] pb-2">Experience</h3>
+              
+              <div className="mb-8">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h4 className="text-white font-bold text-lg">Senior Frontend Engineer</h4>
+                  <span className="font-mono text-xs text-[#555]">2023 - Present</span>
+                </div>
+                <div className="text-[#888] text-sm mb-4 font-medium">TechCorp Inc.</div>
+                <ul className="list-disc pl-4 space-y-2 text-[#777] text-sm leading-relaxed marker:text-[#444]">
+                  <li>Spearheaded the migration of the core platform legacy codebase to Next.js 14, resulting in a 40% improvement in Largest Contentful Paint (LCP).</li>
+                  <li>Architected and documented a comprehensive design system used across 5 different internal products, reducing UI development time by 30%.</li>
+                  <li>Mentored junior developers and conducted code reviews to maintain high code quality standards.</li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h4 className="text-white font-bold text-lg">Frontend Developer</h4>
+                  <span className="font-mono text-xs text-[#555]">2021 - 2023</span>
+                </div>
+                <div className="text-[#888] text-sm mb-4 font-medium">StartUp Studio</div>
+                <ul className="list-disc pl-4 space-y-2 text-[#777] text-sm leading-relaxed marker:text-[#444]">
+                  <li>Developed high-conversion landing pages and interactive marketing assets using Gatsby and React.</li>
+                  <li>Collaborated directly with UI/UX designers to implement pixel-perfect, responsive interfaces from Figma prototypes.</li>
+                  <li>Integrated third-party APIs (Stripe, Contentful) to enable e-commerce and dynamic content management functionality.</li>
+                </ul>
+              </div>
+            </section>
+            
+            <section>
+              <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-6 border-b border-[#222] pb-2">Projects</h3>
+              <div className="mb-6">
+                <h4 className="text-white font-bold text-sm mb-1">Fintech Dashboard</h4>
+                <p className="text-[#777] text-sm">Real-time financial analytics dashboard built with D3.js and WebSockets.</p>
+              </div>
+              <div>
+                <h4 className="text-white font-bold text-sm mb-1">E-Commerce API</h4>
+                <p className="text-[#777] text-sm">Headless Node.js/GraphQL backend handling 10k+ daily requests.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+        
+        <div className="absolute top-8 right-8 hidden md:block">
+          <button className="border border-[#333] p-2 hover:bg-[#222] text-[#666] hover:text-white transition-colors rounded-sm" title="Print / PDF">
+            <Download size={16} />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+
   // -- Render Logic --
 
   return (
@@ -643,6 +758,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
         
         {activeSection === 'HOME' && <HomeContent />}
         {activeSection === 'ABOUT' && <AboutContent />}
+        {activeSection === 'RESUME' && <ResumeContent />}
         {activeSection === 'SKILLS' && <SkillsContent />}
         {activeSection === 'LEARNING' && <LearningContent />}
         {activeSection === 'PROJECTS' && <ProjectsContent />}
@@ -655,15 +771,14 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
         <div className="shrink-0 px-5 md:px-12 pb-8 md:pb-10 pt-4 bg-[#0c0c0c] border-t border-[#222] md:border-t-0">
             
             {/* Dynamic Button */}
-            <a
-              href="/Curriculo.pdf"
-              download
+            <button 
+              onClick={() => onNavigate('RESUME')}
               className="group block w-full md:max-w-[360px] bg-[#b0b0b0] hover:bg-[#c0c0c0] text-[#0a0a0a] h-[54px] md:h-[64px] mb-4 md:mb-6 transition-colors duration-200 rounded-[2px] relative overflow-hidden"
             >
               <span className="flex items-center justify-center h-full font-sans text-xl md:text-2xl font-bold tracking-tight relative z-10">
                 Download My CV.
               </span>
-            </a>
+            </button>
 
             <div className="hidden md:block">
             <ScrollIndicator />
