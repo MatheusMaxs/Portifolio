@@ -4,10 +4,32 @@ import { MainContent } from './components/MainContent';
 import { ImagePanel } from './components/ImagePanel';
 import { Menu, X } from 'lucide-react';
 
+declare const __LAST_COMMIT_DATE__: string | undefined;
+
+const saoPauloFormatter = new Intl.DateTimeFormat('pt-BR', {
+  timeZone: 'America/Sao_Paulo',
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+});
+
+const formatCommitDate = (raw?: string) => {
+  if (!raw) return '—';
+  const parsed = new Date(raw);
+  if (Number.isNaN(parsed.getTime())) return '—';
+
+  const [day, month, year] = saoPauloFormatter.format(parsed).split('/');
+  return `${day} / ${month} / ${year}`;
+};
+
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('HOME');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
+  const lastCommitDate = formatCommitDate(
+    typeof __LAST_COMMIT_DATE__ !== 'undefined' ? __LAST_COMMIT_DATE__ : undefined
+  );
+
   // Sections that consume the full layout (hiding image panel and marquee)
   const isFullPage = ['ABOUT', 'SKILLS', 'LEARNING', 'PROJECTS', 'CONTACT'].includes(activeSection);
 
@@ -61,7 +83,7 @@ const App: React.FC = () => {
           {/* Right Side: Date (Desktop) & Menu Toggle (Mobile) */}
           <div className="flex items-center gap-4 z-20">
             <div className="hidden md:block font-mono text-[10px] text-gray-500 tracking-widest pt-0.5">
-                08 / 11 / 2025
+                {lastCommitDate}
             </div>
             
             <button 
