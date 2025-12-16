@@ -126,23 +126,23 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
       {/* Bottom Section: Info Grid */}
       <div className="w-full mt-auto pt-4 border-t border-[#222]">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                 <div className="border border-[#222] p-4 bg-[#0f0f0f] hover:border-[#333] transition-colors group">
-                    <div className="text-[10px] font-mono text-[#555] uppercase tracking-widest mb-1 group-hover:text-[#777] transition-colors">Location</div>
-                    <div className="text-white font-medium">Brazil</div>
+                 <div className="border border-[#222] p-4 bg-[#0f0f0f] ">
+                    <div className="text-[10px] font-mono text-[#555] uppercase tracking-widest mb-1 ">Location</div>
+                    <div className="text-white font-medium">Mato Grosso, Brazil</div>
                  </div>
-                 <div className="border border-[#222] p-4 bg-[#0f0f0f] hover:border-[#333] transition-colors group">
-                    <div className="text-[10px] font-mono text-[#555] uppercase tracking-widest mb-1 group-hover:text-[#777] transition-colors">Experience</div>
+                 <div className="border border-[#222] p-4 bg-[#0f0f0f] ">
+                    <div className="text-[10px] font-mono text-[#555] uppercase tracking-widest mb-1 ">Experience</div>
                     <div className="text-white font-medium">2+ Years</div>
                  </div>
-                 <div className="border border-[#222] p-4 bg-[#0f0f0f] hover:border-[#333] transition-colors group">
-                    <div className="text-[10px] font-mono text-[#555] uppercase tracking-widest mb-1 group-hover:text-[#777] transition-colors">Status</div>
+                 <div className="border border-[#222] p-4 bg-[#0f0f0f] ">
+                    <div className="text-[10px] font-mono text-[#555] uppercase tracking-widest mb-1">Status</div>
                     <div className="text-white font-medium text-sm flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
+                    <span className="w-1.5 h-1.5 bg-gray rounded-full animate-pulse"></span>
                     Open to work
                     </div>
                  </div>
-                 <div className="border border-[#222] p-4 bg-[#0f0f0f] hover:border-[#333] transition-colors group">
-                    <div className="text-[10px] font-mono text-[#555] uppercase tracking-widest mb-1 group-hover:text-[#777] transition-colors">Socials</div>
+                 <div className="border border-[#222] p-4 bg-[#0f0f0f] ">
+                    <div className="text-[10px] font-mono text-[#555] uppercase tracking-widest mb-1 ">Socials</div>
                      <div className="flex items-center gap-4">
                          <a href="https://github.com/MatheusMaxs" className="text-[#666] hover:text-white transition-colors hover:scale-110 transform duration-200"><Github size={20} /></a>
                          <a href="#" className="text-[#666] hover:text-white transition-colors hover:scale-110 transform duration-200"><Twitter size={20} /></a>
@@ -233,7 +233,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
              
              <div className="flex flex-wrap gap-2 content-start mb-8">
                 {['Git', 'GitHub', 'Vite', 'Webpack', 'Figma', 'Jest', 'Docker', 'Linux',].map(tool => (
-                    <span key={tool} className="border border-[#222] bg-[#0f0f0f] px-3 py-1.5 text-xs text-[#888] hover:text-white hover:border-[#444] transition-colors cursor-default select-none">
+                    <span key={tool} className="border border-[#222] bg-[#0f0f0f] px-3 py-1.5 text-xs text-[#888] ">
                         {tool}
                     </span>
                 ))}
@@ -268,7 +268,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
          </div>
          <div className="hidden md:flex gap-1">
              {[80, 40, 60, 90, 30, 70, 50, 20].map((h, i) => (
-                 <div key={i} className="w-1 bg-[#222] hover:bg-[#444] transition-colors" style={{ height: `${h * 0.4}px` }}></div>
+                 <div key={i} className="w-1 bg-[#222] " style={{ height: `${h * 0.4}px` }}></div>
              ))}
          </div>
       </div>
@@ -292,8 +292,8 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
           <div className="flex flex-col gap-6">
               
               {/* Main Focus Card */}
-              <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 relative group hover:border-[#333] transition-colors">
-                  <div className="absolute top-6 right-6 text-[#333] group-hover:text-[#555] transition-colors">
+              <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 relative  ">
+                  <div className="absolute top-6 right-6 text-[#333] ">
                       <Cpu size={24} />
                   </div>
                   <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-6 uppercase">Current Focus</h3>
@@ -314,7 +314,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
               </div>
 
               {/* Resources / Platforms */}
-              <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 flex-1 relative group hover:border-[#333] transition-colors">
+              <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 flex-1 relative ">
                    <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-6 uppercase">Sources</h3>
                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="flex items-center gap-3">
@@ -340,8 +340,8 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
           {/* Right Column */}
           <div className="flex flex-col gap-6">
                {/* Books */}
-               <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 relative group hover:border-[#333] transition-colors flex-1">
-                   <div className="absolute top-6 right-6 text-[#333] group-hover:text-[#555] transition-colors">
+               <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 relative flex-1">
+                   <div className="absolute top-6 right-6 text-[#333] ">
                       <BookOpen size={24} />
                    </div>
                    <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-6 uppercase">Reading List</h3>
@@ -349,7 +349,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                    <ul className="space-y-6">
                        <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 group/book">
                            <div>
-                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Clean Architecture</span>
+                               <span className="block text-lg text-[#e5e5e5] font-bold ">Clean Architecture</span>
                                <span className="text-xs text-[#666] font-mono">Robert C. Martin</span>
                            </div>
                            <span className="inline-block px-2 py-1 border border-[#222] bg-[#111] text-[9px] text-[#555] uppercase tracking-widest text-center min-w-[60px]">Read</span>
@@ -357,7 +357,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                        <li className="w-full h-[1px] bg-[#1a1a1a]"></li>
                        <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 group/book">
                            <div>
-                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Spring in Action</span>
+                               <span className="block text-lg text-[#e5e5e5] font-bold ">Spring in Action</span>
                                <span className="text-xs text-[#666] font-mono">Craig Walls</span>
                            </div>
                            <span className="inline-block px-2 py-1 border border-[#222] bg-[#111] text-[9px] text-[#e5e5e5] uppercase tracking-widest text-center min-w-[60px] animate-pulse">Reading</span>
@@ -365,7 +365,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                         <li className="w-full h-[1px] bg-[#1a1a1a]"></li>
                         <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 group/book">
                            <div>
-                               <span className="block text-lg text-[#e5e5e5] font-bold group-hover/book:underline decoration-[#333] underline-offset-4">Effective Java</span>
+                               <span className="block text-lg text-[#e5e5e5] font-bold ">Effective Java</span>
                                <span className="text-xs text-[#666] font-mono">Joshua Bloch</span>
                            </div>
                            <span className="inline-block px-2 py-1 border border-[#222] bg-[#111] text-[9px] text-[#444] uppercase tracking-widest text-center min-w-[60px]">Next</span>
@@ -374,11 +374,11 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                </div>
 
                {/* Interest Tags */}
-               <div className="border border-[#222] bg-[#0a0a0a] p-6 relative group hover:border-[#333] transition-colors">
+               <div className="border border-[#222] bg-[#0a0a0a] p-6 relative ">
                     <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-4 uppercase">Exploration</h3>
                     <div className="flex flex-wrap gap-2">
                         {['Spring Security', 'PostgreSQL', 'REST APIs', 'AI Agents', 'UI/UX Psych.', 'Accessibility'].map(tag => (
-                            <span key={tag} className="text-xs text-[#666] border border-[#222] px-2 py-1 bg-[#0f0f0f] select-none hover:text-white hover:border-[#444] transition-colors">
+                            <span key={tag} className="text-xs text-[#666] border border-[#222] px-2 py-1 bg-[#0f0f0f] select-none ">
                                 {tag}
                             </span>
                         ))}
@@ -552,7 +552,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
               {/* Flex Container to push layout to bottom */}
               <div className="flex flex-col flex-1 justify-between gap-6 mb-8">
                   {/* Email */}
-                  <div className="w-full border border-[#222] bg-[#0a0a0a] p-6 group hover:border-[#333] transition-colors">
+                  <div className="w-full border border-[#222] bg-[#0a0a0a] p-6 ">
                       <div className="flex items-center gap-4 mb-2">
                           <Mail size={20} className="text-[#444]" />
                           <span className="font-mono text-[#555] text-xs uppercase tracking-widest">Email</span>
@@ -565,7 +565,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                   {/* Bottom Grid */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Location */}
-                      <div className="border border-[#222] bg-[#0a0a0a] p-6 group hover:border-[#333] transition-colors">
+                      <div className="border border-[#222] bg-[#0a0a0a] p-6">
                           <div className="flex items-center gap-4 mb-2">
                               <MapPin size={20} className="text-[#444]" />
                               <span className="font-mono text-[#555] text-xs uppercase tracking-widest">Location</span>
@@ -577,7 +577,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
                       </div>
 
                        {/* Socials */}
-                       <div className="border border-[#222] bg-[#0a0a0a] p-6 group hover:border-[#333] transition-colors flex flex-col justify-between">
+                       <div className="border border-[#222] bg-[#0a0a0a] p-6 ">
                            <div className="flex items-center gap-4 mb-4">
                               <span className="font-mono text-[#555] text-xs uppercase tracking-widest">Socials</span>
                            </div>
