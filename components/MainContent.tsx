@@ -170,8 +170,8 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mb-12 flex-1">
           
           {/* Card 1: Core Stack */}
-          <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 flex flex-col relative group hover:border-[#333] transition-colors">
-             <div className="absolute top-4 right-4 text-[#333] group-hover:text-[#555]">
+          <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 flex flex-col relative">
+             <div className="absolute top-4 right-4 text-[#333]">
                 <Terminal size={20} />
              </div>
              <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-8 uppercase">01 // Development</h3>
@@ -202,31 +202,31 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection }) => {
           </div>
 
           {/* Card 2: Styling & UI */}
-          <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 flex flex-col relative group hover:border-[#333] transition-colors">
-             <div className="absolute top-4 right-4 text-[#333] group-hover:text-[#555]">
+          <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 flex flex-col relative ">
+             <div className="absolute top-4 right-4 text-[#333] ">
                 <Layers size={20} />
              </div>
              <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-8 uppercase">02 // Interface</h3>
              
              <ul className="space-y-6 mt-2">
                 <li className="group/item">
-                    <span className="block text-xl font-bold text-[#ccc] group-hover/item:text-white transition-colors mb-1">Tailwind CSS</span>
+                    <span className="block text-xl font-bold text-[#ccc] ">Tailwind CSS</span>
                     <span className="text-[11px] text-[#555] font-mono">Advanced Config & Plugins</span>
                 </li>
                 <li className="group/item">
-                    <span className="block text-xl font-bold text-[#ccc] group-hover/item:text-white transition-colors mb-1">Framer Motion</span>
+                    <span className="block text-xl font-bold text-[#ccc] ">Framer Motion</span>
                     <span className="text-[11px] text-[#555] font-mono">Layout Animations & Gestures</span>
                 </li>
                 <li className="group/item">
-                    <span className="block text-xl font-bold text-[#ccc] group-hover/item:text-white transition-colors mb-1">CSS/Sass</span>
+                    <span className="block text-xl font-bold text-[#ccc] ">CSS/Sass</span>
                     <span className="text-[11px] text-[#555] font-mono">Modules & Architecture</span>
                 </li>
              </ul>
           </div>
 
           {/* Card 3: Tools & Workflow */}
-          <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 flex flex-col relative group hover:border-[#333] transition-colors lg:col-span-1 md:col-span-2 lg:h-full">
-             <div className="absolute top-4 right-4 text-[#333] group-hover:text-[#555]">
+          <div className="border border-[#222] bg-[#0a0a0a] p-6 md:p-8 flex flex-col relative ">
+             <div className="absolute top-4 right-4 text-[#333] ">
                 <Box size={20} />
              </div>
              <h3 className="font-mono text-[#555] text-[10px] tracking-[0.2em] mb-8 uppercase">03 // Workflow</h3>
