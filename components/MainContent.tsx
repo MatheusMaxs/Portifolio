@@ -435,9 +435,7 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection, onNavig
               </div>
           </div>
         </a>
-
           {/* Project 2 */}
-          <a href="https://github.com/MatheusMaxs/TaskFlow-API" target="_blank" className="border border-[#222] bg-[#0a0a0a] group hover:border-[#333] transition-colors flex flex-col">
            <div className="border border-[#222] bg-[#0a0a0a] group hover:border-[#333] transition-colors flex flex-col">
               <div className="h-72 bg-[#111] relative overflow-hidden border-b border-[#222]">
                    <div className="absolute inset-0 bg-noise opacity-20"></div>
@@ -459,10 +457,9 @@ export const MainContent: React.FC<MainContentProps> = ({ activeSection, onNavig
                       {['Java', 'Spring Boot', 'PostgreSQL', 'React'].map(t => (
                           <span key={t} className="text-[10px] font-mono text-[#555] border border-[#222] px-2 py-1">{t}</span>
                       ))}
-                  </div>
+                  </div>  
               </div>
           </div>
-        </a>
            {/* Design Section (Full Width or Grid) */}
            <div className="lg:col-span-2 mt-4 mb-12">
                 <h4 className="text-white font-bold tracking-widest text-xl mb-6 uppercase flex items-center gap-3">
